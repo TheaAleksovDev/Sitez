@@ -2,21 +2,21 @@ export default [
     {
         id: "1",
         skillname: "HTML",
-        skillicon: "IoLogoHtml5"
+        hasSkill: "false"
     },
     {
         id: "2",
         skillname: "CSS",
-        skillicon: "IoLogoCss3"
+        hasSkill: "false"
     },
     {
         id: "3",
         skillname: "JavaScript",
-        skillicon :"IoLogoJavascript"
+        hasSkill: "false"
     },
     {
         id: "4",
         skillname: "React",
-        skillicon: "IoLogoReact"
+        hasSkill: "false"
     }
 ]

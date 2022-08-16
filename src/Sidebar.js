@@ -1,13 +1,20 @@
 import React from "react"
 import Skills from "./Skills"
-import { IoLogoHtml5 } from "react-icons/io"
-import { IoLogoCss3 } from "react-icons/io"
-import { IoLogoJavascript } from "react-icons/io"
-import { IoLogoReact } from "react-icons/io"
 import skillsData from "./skills-data"
 export default function Sidebar(){
     
     const [skills, setSkills] = React.useState(skillsData)
+
+    function skillOn(){
+        setSkills(prevSkill => {
+        return{
+            ...prevSkill,
+            hasSkill : !prevSkill.hasSkill
+        }
+        console.log(prevSkill)
+    })
+    }
+    
 
     const allSkills = skills.map(skill=>{
         return(
@@ -15,7 +22,8 @@ export default function Sidebar(){
         <div>
             <Skills
             name = {skill.skillname}
-            icon = {skill.skillicon}
+            hasSkill = {skill.has}
+            handleClick = {skillOn}
         />
         </div>
         )
