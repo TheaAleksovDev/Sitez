@@ -1,18 +1,22 @@
 export default [
     {
         id: "1",
-        skillname: "HTML"
+        skillname: "HTML",
+        skillicon: "IoLogoHtml5"
     },
     {
         id: "2",
-        skillname: "CSS"
+        skillname: "CSS",
+        skillicon: "IoLogoCss3"
     },
     {
         id: "3",
-        skillname: "JavaScript"
+        skillname: "JavaScript",
+        skillicon :"IoLogoJavascript"
     },
     {
         id: "4",
-        skillname: "React"
+        skillname: "React",
+        skillicon: "IoLogoReact"
     }
 ]
