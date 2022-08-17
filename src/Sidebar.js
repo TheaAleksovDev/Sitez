@@ -5,13 +5,14 @@ export default function Sidebar(){
     
     const [skills, setSkills] = React.useState(skillsData)
 
+    const isTrue = skills.hasSkill ? console.log("yes") : console.log("no")
     function skillOn(){
         setSkills(prevSkill => {
         return{
             ...prevSkill,
             hasSkill : !prevSkill.hasSkill
         }
-        console.log(prevSkill)
+        
     })
     }
     
@@ -22,7 +23,7 @@ export default function Sidebar(){
         <div>
             <Skills
             name = {skill.skillname}
-            hasSkill = {skill.has}
+            hasSkill = {skill.hasSkill}
             handleClick = {skillOn}
         />
         </div>

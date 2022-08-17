@@ -2,21 +2,21 @@ export default [
     {
         id: "1",
         skillname: "HTML",
-        hasSkill: "false"
+        hasSkill: "true"
     },
     {
         id: "2",
         skillname: "CSS",
-        hasSkill: "false"
+        hasSkill: "true"
     },
     {
         id: "3",
         skillname: "JavaScript",
-        hasSkill: "false"
+        hasSkill: "true"
     },
     {
         id: "4",
         skillname: "React",
-        hasSkill: "false"
+        hasSkill: "true"
     }
 ]
