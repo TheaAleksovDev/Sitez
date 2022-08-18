@@ -16,10 +16,18 @@ export default function Skills(props){
                 return <FaReact/>
         }
     }
+   
+
+
+     const styles = {
+        color: props.hasSkill ? "lightgreen" : "rgb(126, 126, 126)"
+    }
+
     return(
-        <div className="skill" onClick={props.handleClick}>
-            {pickIcon()}
-        <h3 className="skill-name"> {props.name}</h3>
+        
+        <div className="skill" style={styles} onClick={()=>props.handleClick(props.id)}>
+             <div className="skill-icon">{pickIcon()}</div>
+            <h3 className="skill-name"> {props.name}</h3>
         </div>
     )
 }
