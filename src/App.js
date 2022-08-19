@@ -1,10 +1,12 @@
 import React from "react"
 import Sidebar from "./Sidebar"
 import "./styles.css"
+import Form from "./Form"
 export default function App(){
     return(
         <div>
-            <Sidebar />
+            <Form />
+            {/* <Sidebar /> */}
         </div>
     )
 }
