@@ -1,14 +1,129 @@
+:root{
+    --second-prime: #e6e6e6;
+    --prime: #b51d64;
+    --light: #bfbbc7;
+    --light-shadow:#7d7c7d;
+    --dark-shadow: #111111;
+    --text: #f7ef81;
+    --code:#e5eb32;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: light;
+    background-color: var(--dark-shadow);
+    
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #0b0b0b;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+.header h1{
+    font-size: 40px;
+    background: #FF9A57;
+        background: linear-gradient(to right , #ff0f7b 0%, #ec7d10 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.logo{
+    position: absolute;
+    left: 20px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.right{
+    position: absolute;
+    right: 50px;
+    font-size: 25px;
+    background: #FF9A57;
+        background: linear-gradient(to right, #ff0f7b 0%, #ec7d10 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.intro h2{
+    font-family: 'Source Code Pro', monospace;
+    background: #FF9A57;
+        background: linear-gradient(to right, #ec7d10 0%, #ff0f7b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin: 0;
+    padding-left: 120px;
+}
+.html-tag{
+    margin-left: 0px;
+        opacity: 0.7;
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        color: var(--prime);
+        margin: 5px 0;
+        padding-left: 0px;
+}
+.intro{
+    
+    letter-spacing: 2px;
+    width: 65vw;
+    font-size: 16px;
+    text-align: left;
+    color: var(--code);
+    
+
+}
+.intro h1{
+    margin: 0;
+        padding: 0;
+        padding-left: 120px;
+        background: #FF9A57;
+            background: linear-gradient(to right , #ec7d10 0%, #ff0f7b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+.tag{
+    margin-left: 30px;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color:var(--prime);
+    margin: 5px 0;
+     padding-left: 50px;
+}
+.intro-container{
+    display: flex;
+        flex-direction: column;
+    padding: 30px;
+}
 .skill{
     display: flex;
     align-items: center;
-    color: white;
+    color: --light;
+
+
+    font-weight: 900;
 
 }
 .skill-icon{
     padding: 0 7px;
 }
 .sidebar{
-    background-color: rgb(79, 79, 79);
+
     width: 130px;
 }
 .sidebar:hover,
@@ -16,13 +131,13 @@
     cursor: pointer;
 }
 .toggle-skills-btn{
-    background-color: rgb(65, 65, 65);
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--second-prime);
     width: 130px;
     height: 50px;
     text-align: center;
     font-size: 17px;
     font-weight: bold;
-    color: rgb(183, 183, 183);
     border: none;
 
 }
@@ -32,7 +147,6 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #d0efb1;
     width: 200px;
     padding: 20px;
     border-radius: 10px;
@@ -40,13 +154,11 @@ form{
 input{
     width: 150px;
     margin-bottom: 7px;
-    background-color: #bad4aa;
     border: none;
     border-radius: 2px;
     border: solid 1px #678157;
 }
 button{
-    background-color: #678157;
         border: none;
         border-radius: 2px;
         color: white;
@@ -66,10 +178,7 @@ button{
 input[type=checkbox] {
     accent-color: #678157;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #678157;
-}
+
 label{
     color:#678157
 }

@@ -12,8 +12,6 @@ export default function Sidebar(){
             })
         })
     }
-
-
     const allSkills = skills.map(skill=>{
         return(
         
